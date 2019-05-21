@@ -1,0 +1,2 @@
+echo "===> Launching MirrorMaker ..."
+exec kafka-mirror-maker --consumer.config /etc/kafka/mirrormaker.consumer.properties --producer.config /etc/kafka/mirrormaker.producer.properties --whitelist *

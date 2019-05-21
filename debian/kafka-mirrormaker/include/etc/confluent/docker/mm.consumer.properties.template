@@ -1,0 +1,2 @@
+bootstrap.servers=env['MM_CONSUMER_BOOTSTRAP_SERVERS']
+group.id=env['MM_GROUP_ID']

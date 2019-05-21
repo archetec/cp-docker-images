@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+. /etc/confluent/docker/bash-config
+
+# need to check if Kafka is healthy

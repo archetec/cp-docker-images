@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+. /etc/confluent/docker/bash-config
+
+dub ensure MM_CONSUMER_BOOTSTRAP_SERVERS
+dub ensure MM_PRODUCER_BOOTSTRAP_SERVERS
+dub ensure MM_GROUP_ID
+
+dub template "/etc/confluent/docker/mm.consumer.properties.template" "/etc/kafka/mirrormaker.consumer.properties"
+dub template "/etc/confluent/docker/mm.producer.properties.template" "/etc/kafka/mirrormaker.producer.properties"

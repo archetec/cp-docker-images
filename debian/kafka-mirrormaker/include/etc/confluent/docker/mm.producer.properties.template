@@ -1,0 +1,3 @@
+bootstrap.servers=env['MM_PRODUCER_BOOTSTRAP_SERVERS']
+key.serializer=org.apache.kafka.common.serialization.ByteArraySerializer
+value.serializer=org.apache.kafka.common.serialization.ByteArraySerializer
